@@ -1,0 +1,19 @@
+Fichier à rendre : py_array_rotation_detector.py
+Interdit         : collections.deque.rotate()
+
+Écrire une fonction qui détermine si arr2 est une rotation (gauche ou droite)
+de arr1. Une rotation décale les éléments de façon circulaire :
+[1, 2, 3] décalé d'un cran vers la droite donne [3, 1, 2].
+
+- Retourne True si arr2 est une rotation de arr1, False sinon.
+- Des listes de longueurs différentes ne sont jamais des rotations.
+- Deux listes vides sont des rotations l'une de l'autre.
+
+def array_rotation_detector(arr1: list, arr2: list) -> bool:
+
+Exemples :
+  array_rotation_detector([1, 2, 3, 4, 5], [4, 5, 1, 2, 3])  -> True
+  array_rotation_detector([1, 2, 3, 4, 5], [5, 1, 2, 3, 4])  -> True
+  array_rotation_detector([1, 2, 3], [3, 2, 1])              -> False
+  array_rotation_detector([1, 2], [1, 2, 3])                 -> False
+  array_rotation_detector([], [])                            -> True

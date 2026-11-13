@@ -1,0 +1,19 @@
+Fichier à rendre : py_list_intersection_finder.py
+Autorisé         : aucune fonction (pas d'import)
+
+Écrire une fonction qui calcule l'intersection de plusieurs listes triées :
+les éléments présents dans TOUTES les listes.
+
+- Résultat trié par ordre croissant, sans doublons.
+- Entrée vide -> [] ; si une des listes est vide -> [].
+
+def list_intersection_finder(lists: list[list[int]]) -> list[int]:
+
+Exemples :
+  list_intersection_finder([[1, 2, 3], [2, 3, 4], [2, 3, 5]])           -> [2, 3]
+  list_intersection_finder([[1, 2, 3, 4], [2, 4, 6, 8], [4, 8, 12]])    -> [4]
+  list_intersection_finder([[1, 1, 2, 3], [1, 2, 2, 3], [1, 2, 3, 3]])  -> [1, 2, 3]
+  list_intersection_finder([[1, 2, 3], [4, 5, 6]])                      -> []
+  list_intersection_finder([])                                          -> []
+  list_intersection_finder([[1, 2, 3], []])                             -> []
+  list_intersection_finder([[5]])                                       -> [5]
